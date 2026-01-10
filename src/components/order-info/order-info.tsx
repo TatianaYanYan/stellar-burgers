@@ -72,5 +72,17 @@ export const OrderInfo: FC = () => {
     return <Preloader />;
   }
 
-  return <OrderInfoUI orderInfo={orderInfo} />;
+  return (
+    <>
+      {number && (
+        <p
+          className='text text_type_main-medium mb-8 mt-4'
+          style={{ textAlign: 'center' }}
+        >
+          #{number}
+        </p>
+      )}
+      <OrderInfoUI orderInfo={orderInfo} />
+    </>
+  );
 };

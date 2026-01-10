@@ -124,7 +124,7 @@ const App = () => {
           <Route
             path={ROUTES.FEED_ORDER}
             element={
-              <Modal title='Детали заказа' onClose={handleModalClose}>
+              <Modal onClose={handleModalClose}>
                 <OrderInfo />
               </Modal>
             }
@@ -141,7 +141,7 @@ const App = () => {
             path={ROUTES.PROFILE_ORDER}
             element={
               <ProtectedRoute>
-                <Modal title='Детали заказа' onClose={handleModalClose}>
+                <Modal onClose={handleModalClose}>
                   <OrderInfo />
                 </Modal>
               </ProtectedRoute>
