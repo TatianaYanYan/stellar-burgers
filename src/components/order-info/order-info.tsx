@@ -76,7 +76,7 @@ export const OrderInfo: FC = () => {
     <>
       {number && (
         <p
-          className='text text_type_main-medium mb-8 mt-4'
+          className='text text_type_main-medium mb-8 mt-'
           style={{ textAlign: 'center' }}
         >
           #{number}
